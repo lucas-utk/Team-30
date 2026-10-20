@@ -274,11 +274,7 @@
 
                 if (response.ok) {
 
-                    errorMessage.innerText = '';
-
-                    loginCard.style.display = 'none';
-
-                    dashboardCard.style.display = 'block';
+                   window.location.href = '/home';
 
                 } else {
 
@@ -351,12 +347,7 @@
                 });
 
                 if (response.ok) {
-
-                    createAccountCard.style.display = 'none';
-
-                    dashboardCard.style.display = 'block';
-
-                    registerError.innerText = '';
+                    window.location.href = '/home';
 
                 } else if (response.status === 409) {
 
